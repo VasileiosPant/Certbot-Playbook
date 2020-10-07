@@ -14,4 +14,4 @@
   become: yes
 - name: Certificate
   command: certbot --apache --email {{ email }} -d {{ site }}
-  become: yes
+  become: true
